@@ -31,3 +31,4 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+/projects_wip/
