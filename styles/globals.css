@@ -1,7 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
+:root {
+  --void-purple: #231773;
+  --true-purple: #6E30F2;
+  --royal-purple: #4B50BF;
+  --lilac: #ACB0F2;
+  --grey: #EBEDF2;
+}
+
+html, body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -11,7 +16,7 @@ body {
 }
 
 main {
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;

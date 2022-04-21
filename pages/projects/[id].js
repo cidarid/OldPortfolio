@@ -5,11 +5,7 @@ import Head from "next/head"
 
 export async function getStaticProps({ params }) {
   const projectData = await getProjectData(params.id)
-  return {
-    props: {
-      projectData
-    }
-  }
+  return { props: { projectData } }
 }
 
 export async function getStaticPaths() {
@@ -31,7 +27,7 @@ export default function Project({ projectData }) {
         <div>
           <Date dateString={projectData.date}/>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+        <body dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
       </article>
     </div>
   )

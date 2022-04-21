@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Navbar from '@components/Navbar'
 import {useState} from 'react'
 // import utilStyles from '../styles/utils.module.css'
 import { getSortedProjectData } from "../lib/project"
@@ -25,25 +26,26 @@ export default function Home({ allProjectData }) {
   }
 
   return (
+    <>
+      <Navbar/>
     <div className="container">
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
       <main>
         <Header title="Welcome to my app!" />
+        <Header title="About me"/>
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Hi! I’m Spencer. I’ve been programming since 2014, and love what I do.
+          I like to code things from the ground up, and enjoy seeing my ideas come to life.
+          I’ve made websites, games, web applications, and desktop applications.
+          I’m constantly looking to improve my skills, and I’d be excited to work with you!
         </p>
-        <ul>
-          {names.map(name => (
-            <li key={name}>{name}</li>
-          ))}
-        </ul>
-        <button onClick={handleClick}>Like ({likes})</button>
         <section>
-          <h2>Blog</h2>
+          <h2>Projects</h2>
           <ul>
             {allProjectData.map(({ id, date, title }) => (
               <li key={id}>
@@ -63,6 +65,7 @@ export default function Home({ allProjectData }) {
       <Footer />
 
     </div>
+    </>
 
 
   )
