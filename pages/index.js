@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import Navbar from '@components/Navbar'
-import {useState} from 'react'
-// import utilStyles from '../styles/utils.module.css'
 import { getSortedProjectData } from "../lib/project"
 import Link from 'next/link'
 import Date from '@components/Date'
@@ -17,17 +14,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allProjectData }) {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
-
-  const [likes, setLikes] = useState(0)
-
-  function handleClick() {
-    setLikes(likes + 1)
-  }
-
   return (
     <>
-      <Navbar/>
     <div className="container">
       <Head>
         <title>Next.js Starter!</title>
