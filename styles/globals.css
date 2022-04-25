@@ -1,7 +1,7 @@
 :root {
   --pop: #8860D0;
   --dark: #6E30F2;
-  --accent: #5AB9EA;
+  --accent: #7877e6;
   --muted: #84CEEB;
   --text: #C1C8E4;
 }
@@ -15,17 +15,26 @@ html, body {
 * {
   background: var(--accent);
   background-clip: border-box;
-  color: var(--text);
+  color: #ffffff;
   box-sizing: border-box;
 }
 
-a, a:visited {
-  color: var(--pop);
+a:link, a:visited {
+  color: white;
 }
 
-nav > * {
-  color: var(--text);
+a:hover {
+  color: var(--dark);
 }
+
+.nav-link, .navbar-brand {
+  color: white !important;
+}
+
+nav {
+  padding: 1rem 2rem 3rem !important;
+}
+
 
 main {
   padding: 5rem 2rem;
@@ -46,6 +55,7 @@ code {
 .project-grid {
   padding-top: 3rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-item {

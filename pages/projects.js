@@ -1,5 +1,4 @@
 import Header from "@components/Header"
-import Date from "@components/Date"
 import Head from "next/head"
 import { getAllProjects } from '../lib/projects'
 
@@ -22,20 +21,21 @@ export async function getStaticProps() {
   }
 }
 
-export default function test({ allProjects }) {
+export default function projects({ allProjects }) {
   return (
     <>
       <div className="container">
         <Head>
-          <title>Next.js Blog Example with ME</title>
+          <title>Projects</title>
         </Head>
+        <Header title="Projects"/>
         <section className="project-grid">
         { allProjects.map(project => (
           <div className="project-item">
-            <h2>{project.title}</h2>
+            <h5>{project.title} ({project.date})</h5>
             <p>{project.content}</p>
-            <p>Languages used: {project.languages}</p>
-            <a href={project.url}>Link</a>
+            <p>Tools used: {project.languages}</p>
+            <a href={project.url} target="_blank">Link</a>
 
           </div>
           )
