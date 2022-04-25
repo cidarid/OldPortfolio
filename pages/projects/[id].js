@@ -1,12 +1,8 @@
-import {getAllProjectIds, getProjectData } from "../../lib/project"
+import { getAllProjectIds, getProjectData } from "/lib/projects"
 import Header from "@components/Header"
 import Date from "@components/Date"
 import Head from "next/head"
 
-export async function getStaticProps({ params }) {
-  const projectData = await getProjectData(params.id)
-  return { props: { projectData } }
-}
 
 export async function getStaticPaths() {
   const paths = getAllProjectIds()
@@ -14,6 +10,11 @@ export async function getStaticPaths() {
     paths,
     fallback: false
   }
+}
+
+export async function getStaticProps({ params }) {
+  const projectData = await getProjectData(params.id)
+  return { props: { projectData } }
 }
 
 export default function Project({ projectData }) {

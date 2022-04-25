@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import { getSortedProjectData } from "../lib/project"
+import { getSortedProjectData } from "../lib/projects"
 import Link from 'next/link'
 import Date from '@components/Date'
 
@@ -35,7 +35,7 @@ export default function Home({ allProjectData }) {
         <section>
           <h2>Projects</h2>
           <ul>
-            {allProjectData.map(({ id, date, title }) => (
+            {allProjectData.map(({ id, date, title, contentHtml }) => (
               <li key={id}>
                 <Link href={`/projects/${id}`}>
                   <a>{title}</a>

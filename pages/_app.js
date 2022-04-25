@@ -1,7 +1,8 @@
 import '@styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import Head from 'next/head'
 import {useEffect} from "react"
+import NavbarBS from "@components/NavbarBS"
+import {SSRProvider} from "react-bootstrap"
 
 
 
@@ -14,9 +15,10 @@ function Application({ Component, pageProps }) {
   }, [])
 
   return(
-    <>
-    <Component {...pageProps} />
-      </>
+    <SSRProvider>
+      <NavbarBS/>
+      <Component {...pageProps} />
+    </SSRProvider>
   )
 }
 
