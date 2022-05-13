@@ -1,10 +1,11 @@
 import {Container, Nav, Navbar } from "react-bootstrap"
+import Header from '@components/Header'
 
 export default function NavbarBS() {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="/">Spencer Fletcher</Navbar.Brand>
+        <Navbar.Brand href="/"><Header title="Spencer Fletcher"/></Navbar.Brand>
 
       </Container>
       <Container>

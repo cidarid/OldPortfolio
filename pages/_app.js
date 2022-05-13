@@ -2,7 +2,9 @@ import '@styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import {useEffect} from "react"
 import NavbarBS from "@components/NavbarBS"
+import Footer from "@components/Footer"
 import {SSRProvider} from "react-bootstrap"
+import Spacer from "@components/Spacer"
 
 
 
@@ -18,6 +20,8 @@ function Application({ Component, pageProps }) {
     <SSRProvider>
       <NavbarBS/>
       <Component {...pageProps} />
+      <Spacer height="100px"/>
+      <Footer/>
     </SSRProvider>
   )
 }
