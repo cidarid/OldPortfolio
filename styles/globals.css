@@ -118,3 +118,7 @@ h2 {
   align-items: center;
   flex-direction: column;
 }
+
+.quote {
+  text-align: center;
+}
