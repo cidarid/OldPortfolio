@@ -17,7 +17,7 @@ export default function Home({ allProjectData }) {
     <>
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
