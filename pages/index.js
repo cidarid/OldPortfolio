@@ -24,7 +24,7 @@ export default function Home({ allProjectData }) {
 
       <main>
         <Header title="About Me"/>
-        <p>
+        <p style={{textAlign: "center"}}>
           Hi! I’m Spencer. I’ve been programming since 2014, and love what I do.
           I like to code things from the ground up, and enjoy seeing my ideas come to life.
           I’ve made websites, games, web applications, and desktop applications.
