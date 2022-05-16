@@ -99,6 +99,7 @@ code {
 .child {
   min-width: 300px;
   width: 47%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -121,4 +122,9 @@ h2 {
 
 .quote {
   text-align: center;
+}
+
+i {
+  padding: 0 1rem;
+  font-size: 1.1rem;
 }

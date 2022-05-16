@@ -12,7 +12,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allProjectData }) {
+export default function Home() {
   return (
     <>
     <div className="container">
@@ -31,7 +31,7 @@ export default function Home({ allProjectData }) {
           I’m constantly looking to improve my skills, and I’d be excited to work with you!
         </p>
         <Spacer height="150px"/>
-        <h1>Things People Have Said About Me</h1>
+        <h1 style={{textAlign: "center"}}>Things People Have Said About Me</h1>
         <div class="flex-container">
           <div class="child">
             <Quote

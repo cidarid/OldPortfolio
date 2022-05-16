@@ -14,6 +14,7 @@ export async function getStaticProps() {
     'excerpt',
     'languages',
     'url',
+    'link'
   ])
 
   return {
@@ -28,15 +29,15 @@ export default function projects({ allProjects }) {
         <Head>
           <title>Projects</title>
         </Head>
-        <Header title="Projects"/>
+        <div style={{textAlign: "center"}}><Header title="Projects"/></div>
         <section className="project-grid">
         { allProjects.map(project => (
           <div className="project-item">
             <h5>{project.title} ({project.date})</h5>
             <p>{project.content}</p>
             <p>Tools used: {project.languages}</p>
-            <a href={project.url} target="_blank">Link</a>
-
+            <a href={project.url} target="_blank">Code</a>
+            <p>{project.link ? <a href={project.link} target="_blank">Working project</a> : null }</p>
           </div>
           )
         )}
