@@ -3,7 +3,7 @@
   --dark: #6E30F2;
   --accent: #7877e6;
   --muted: #84CEEB;
-  --text: #C1C8E4;
+  --text: #eeeeee;
 }
 
 html, body {
@@ -15,12 +15,12 @@ html, body {
 * {
   background: var(--accent);
   background-clip: border-box;
-  color: #ffffff;
+  color: var(--text);
   box-sizing: border-box;
 }
 
 a:link, a:visited {
-  color: white;
+  color: var(--text);
 }
 
 a:hover {
@@ -28,7 +28,7 @@ a:hover {
 }
 
 .nav-link, .navbar-brand {
-  color: white !important;
+  color: var(--old-accent) !important;
 }
 
 nav {
@@ -78,13 +78,13 @@ code {
 }
 
 .header {
-  color: #ffffff;
+  color: var(--old-accent);
   text-decoration: none;
   padding-bottom: 0;
 }
 
 .logo {
-  color: #ffffff;
+  color: var(--old-accent);
   text-decoration: none;
   padding-bottom: 0;
   font-size: 30px;

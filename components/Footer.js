@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer class="footer">
+      <footer className="footer">
         <p>
           <a href="mailto:spencer@spencerfletcher.com" target="_blank">
             <i className="bi bi-envelope"></i>

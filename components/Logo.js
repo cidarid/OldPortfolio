@@ -1,3 +1,3 @@
 export default function Header({ title }) {
-  return <h1 class="logo">{title ? title : 'Default title'}</h1>
+  return <h1 className="logo">{title ? title : 'Default title'}</h1>
 }

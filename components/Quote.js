@@ -1,5 +1,5 @@
 export default function Quote({ text, quotee, quoteeRole }) {
-  return <div class="quote">
+  return <div className="quote">
     <h2>"{text ? text : 'Default text'}"</h2>
     <p>
       <strong>{quotee ? quotee : 'Default quotee'}</strong>
