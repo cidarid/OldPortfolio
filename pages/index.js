@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Quote from '@components/Quote'
 import Spacer from "@components/Spacer"
 import { getAllProjects } from "../lib/projects"
 
@@ -71,7 +70,7 @@ export default function Home({ allProjects }) {
               <p>Bootstrap</p>
             </div>
           </section>
-          <Spacer height="75px" />
+          <a name="projects"><Spacer height="75px" /></a>
           <div style={{ textAlign: "center" }}><Header title="Projects" /></div>
           <section className="project-grid">
             {allProjects.map(project => (
