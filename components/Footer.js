@@ -13,7 +13,7 @@ export default function Footer() {
             <i className="bi bi-linkedin"></i>
           </a>
         </p>
-        <p>Created by Spencer Fletcher, 2022</p>
+        <p>Created by Spencer Fletcher, {new Date().getFullYear()}</p>
       </footer>
     </>
   )
