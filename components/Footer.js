@@ -6,7 +6,7 @@ export default function Footer() {
           <a href="mailto:spencer@spencerfletcher.com" target="_blank">
             <i className="bi bi-envelope"></i>
           </a>
-          <a href="https://github.com/locelus" target="_blank">
+          <a href="https://github.com/cidarid" target="_blank">
             <i className="bi bi-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/spencer-fletcher-890b19237/" target="_blank">
