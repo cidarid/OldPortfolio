@@ -41,7 +41,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .project-grid {
@@ -120,4 +119,30 @@ div.block > * {
     justify-content: left;
     align-items: center;
     flex-direction: column;
+}
+
+main#resume p {
+    text-align: left;
+}
+
+#resume h1, h2, h3 {
+    text-align: center;
+    font-feature-settings: normal;
+    font-variant: small-caps;
+}
+
+#resume h3 {
+    font-size: 23px;
+}
+
+#resume .contact-info {
+    text-align: center;
+}
+
+#resume p, ul {
+    margin-bottom: 0.2rem !important;
+}
+
+#resume h1 {
+    padding-bottom: 0;
 }
