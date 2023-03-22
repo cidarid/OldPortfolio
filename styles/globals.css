@@ -133,6 +133,7 @@ main#resume p {
 
 #resume h3 {
     font-size: 23px;
+    margin-bottom: 4px;
 }
 
 #resume .contact-info {
@@ -145,4 +146,8 @@ main#resume p {
 
 #resume h1 {
     padding-bottom: 0;
+}
+
+#resume .block {
+    margin-bottom: 10px;
 }
