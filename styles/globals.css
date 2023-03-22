@@ -35,9 +35,8 @@ nav {
     padding: 1rem 2rem 3rem !important;
 }
 
-
 main {
-    padding: 5rem 8%;
+    padding: 5rem 12%;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -45,15 +44,7 @@ main {
     align-items: center;
 }
 
-code {
-    background: #fafafa;
-    border-radius: 5px;
-    padding: 0.75rem;
-    font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
-}
-
 .project-grid {
-    padding-top: 3rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -72,9 +63,7 @@ code {
 
 .language-item {
     text-align: center;
-    padding: 1rem;
     flex-basis: 33.3%;
-    margin: 0 auto;
 }
 
 .header {
@@ -84,7 +73,6 @@ code {
 }
 
 .logo {
-    color: white;
     text-decoration: none;
     padding-bottom: 0;
     font-size: 30px;
@@ -110,6 +98,20 @@ h2 {
     padding-bottom: 12px;
 }
 
+/* Icons */
+i {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.block {
+    margin-bottom: 75px;
+}
+
+div.block > * {
+    text-align: center;
+}
+
 .footer {
     width: 80%;
     margin: auto;
@@ -118,17 +120,4 @@ h2 {
     justify-content: left;
     align-items: center;
     flex-direction: column;
-}
-
-.quote {
-    text-align: center;
-}
-
-i {
-    padding: 0 1rem;
-    font-size: 1.1rem;
-}
-
-div.block {
-    margin-bottom: 100px;
 }
