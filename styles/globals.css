@@ -121,6 +121,7 @@ div.block > * {
     flex-direction: column;
 }
 
+
 main#resume p {
     text-align: left;
 }
@@ -151,3 +152,4 @@ main#resume p {
 #resume .block {
     margin-bottom: 10px;
 }
+
