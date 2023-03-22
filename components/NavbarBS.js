@@ -1,4 +1,4 @@
-import {Container, Nav, Navbar } from "react-bootstrap"
+import { Container, Nav, Navbar } from "react-bootstrap"
 import Logo from '@components/Logo'
 
 export default function NavbarBS() {
