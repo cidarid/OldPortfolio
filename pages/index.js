@@ -38,35 +38,37 @@ export default function Home({allProjects}) {
             I’m constantly looking to improve my skills, and I’d be excited to work with you!
           </p>
         </div>
-        <h1>Tools & Frameworks</h1>
-        <section className="language-grid block">
-          <div className="language-item">
-            <h2>Programming</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p>Python</p>
-            <p>Java</p>
-            <p>C</p>
-            <p>C#</p>
-            <p>SQL</p>
-          </div>
-          <div className="language-item">
-            <h2>Tools</h2>
-            <p>Netlify</p>
-            <p>Bluehost</p>
-            <p>Wordpress</p>
-            <p>Git & Github</p>
-            <p>Unity</p>
-          </div>
-          <div className="language-item">
-            <h2>Frameworks</h2>
-            <p>Django</p>
-            <p>Next.js</p>
-            <p>Bootstrap</p>
-          </div>
-        </section>
-        <h1>Projects</h1>
+        <div class="block">
+          <h1>Tools & Frameworks</h1>
+          <section className="language-grid">
+            <div className="language-item">
+              <h2>Programming</h2>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
+              <p>Python</p>
+              <p>Java</p>
+              <p>C</p>
+              <p>C#</p>
+              <p>SQL</p>
+            </div>
+            <div className="language-item">
+              <h2>Tools</h2>
+              <p>Netlify</p>
+              <p>Bluehost</p>
+              <p>Wordpress</p>
+              <p>Git & Github</p>
+              <p>Unity</p>
+            </div>
+            <div className="language-item">
+              <h2>Frameworks</h2>
+              <p>Django</p>
+              <p>Next.js</p>
+              <p>Bootstrap</p>
+            </div>
+          </section>
+        </div>
+        <h1 style={{textAlign: "center"}}>Projects</h1>
         <section className="project-grid">
           {allProjects.map(project => (
               <div className="project-item">

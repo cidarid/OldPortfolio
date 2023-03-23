@@ -41,7 +41,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .project-grid {
@@ -58,7 +57,6 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
 }
 
 .language-item {
@@ -121,3 +119,39 @@ div.block > * {
     align-items: center;
     flex-direction: column;
 }
+
+
+main#resume p {
+    text-align: left;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+#resume h1, #resume h2, #resume h3 {
+    font-feature-settings: normal;
+    font-variant: small-caps;
+}
+
+#resume h3 {
+    font-size: 23px;
+    margin-bottom: 4px;
+}
+
+#resume .contact-info {
+    text-align: center;
+}
+
+#resume p, ul {
+    margin-bottom: 0.2rem !important;
+}
+
+#resume h1 {
+    padding-bottom: 0;
+}
+
+#resume .block {
+    margin-bottom: 10px;
+}
+
