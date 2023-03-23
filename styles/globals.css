@@ -57,7 +57,6 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
 }
 
 .language-item {
@@ -126,8 +125,11 @@ main#resume p {
     text-align: left;
 }
 
-#resume h1, h2, h3 {
+h1, h2, h3 {
     text-align: center;
+}
+
+#resume h1, #resume h2, #resume h3 {
     font-feature-settings: normal;
     font-variant: small-caps;
 }
